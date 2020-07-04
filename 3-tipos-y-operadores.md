@@ -11,7 +11,7 @@ Una cadena de texto es un conjunto de caracteres encerrados entre comillas simpl
 'Texto entre comillas simples'
 ```
 
-    Si eventualmente lo que se requiere es mostrar las comillas dentro del texto, se puede usar comillas simples para el texto total y commillas dobles para el texto que se quiere entre commillas o viseversa.
+Si eventualmente lo que se requiere es mostrar las comillas dentro del texto, se puede usar comillas simples para el texto total y commillas dobles para el texto que se quiere entre commillas o viseversa.
 
     ```javascript
     'Y él dijo: "Hola Mundo"'
@@ -21,15 +21,15 @@ Una cadena de texto es un conjunto de caracteres encerrados entre comillas simpl
     "Y él dijo: 'Hola Mundo'"
     ```
 
-    _Lo importante es que el texto no contenga la comillas diferentes que se utilizó para definir la cadena._
+  _Lo importante es que el texto no contenga la comillas diferentes que se utilizó para definir la cadena._
 
-   o tambien se puede recurrir al backslash `\` \(Alt + 92\), el cual si está dentro de una una cadena de texto simboliza que es el siguiente caracter tiene un significado especial, como `\n` salto de linea , `\r` retorno de carro , `\t` tab [entre otros](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions), [mas](https://www.gnu.org/software/emacs/manual/html_node/elisp/Basic-Char-Syntax.html).
+ o tambien se puede recurrir al backslash `\` \(Alt + 92\), el cual si está dentro de una una cadena de texto simboliza que es el siguiente caracter tiene un significado especial, como `\n` salto de linea , `\r` retorno de carro , `\t` tab [entre otros](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions), [mas](https://www.gnu.org/software/emacs/manual/html_node/elisp/Basic-Char-Syntax.html).
 
     ```javascript
     "Y 'él dijo': \"Hola mundo\""
     ```
 
-    O
+O
 
     ```javascript
     'Y \'él dijo\': "Hola mundo"'
