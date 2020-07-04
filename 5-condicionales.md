@@ -12,7 +12,7 @@ if (<condición>) {
 }
 ```
 
-La condición puede ser cualquier expresión que evalúa a verdadero (`true`) o falso (`false`). Crea un archivo llamado `conditionals.js` y agrega el siguiente contenido:
+La condición puede ser cualquier expresión que evalúa a verdadero `true` o falso `false`. Crea un archivo llamado `conditionals.js` y agrega el siguiente contenido:
 
 ```js
 if (true) {
@@ -20,7 +20,7 @@ if (true) {
 }
 ```
 
-**Nota**: Las líneas que terminan con un corchete (`{` o `}`) no se les agrega punto y coma (;).
+**Nota**: Las líneas que terminan con un corchete `{` o `}` no se les agrega punto y coma `;`.
 
 Ejecúta el archivo desde la consola, deberías ver lo siguiente:
 
@@ -31,7 +31,7 @@ Hola Mundo
 
 No importa cuántas veces ejecutes este archivo, el resultado siempre será el mismo.
 
-Ahora probemos con falso (`false`) en vez de verdadero (`true`):
+Ahora probemos con falso `false` en vez de verdadero `true`:
 
 ```js
 if (false) {
@@ -244,7 +244,7 @@ Cuando utilizamos **y** las dos expresiones deben ser verdaderas para que el res
 
 ## Evaluando expresiones booleanas
 
-Volvamos a jugar el juego, pero en vez de utilizar frases, utilicemos expresiones booleanas. Debes decidir si cada una de las siguientes expresiones es verdadera o falsa (`true` o `false`):
+Volvamos a jugar el juego, pero en vez de utilizar frases, utilicemos expresiones booleanas. Debes decidir si cada una de las siguientes expresiones es verdadera o falsa `true` o `false`:
 
 1. `true`
 2. `false`
@@ -292,7 +292,7 @@ Hagamos algunos ejercicios. Decide si las siguientes expresiones evalúan a `tru
 
 Revisa tu respuesta evaluando cada expresión en la consola de Node.js.
 
-Podemos negar cualquier expresión booleana anteponiendo un signo de exclamación (`!`). Por ejemplo:
+Podemos negar cualquier expresión booleana anteponiendo un signo de exclamación `!`. Por ejemplo:
 
 * `!true` es `false`
 * `!false` es `true`

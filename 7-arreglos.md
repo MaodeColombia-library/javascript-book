@@ -49,7 +49,7 @@ for (var i=0; i < array.length; i++) {
 
 ## Reemplazando un elemento
 
-Es posible reemplazar el valor de cualquier elemento del arreglo. Por ejemplo:
+Es posible reemplazar el valor de cualquier elemento del arreglo, por ejemplo:
 
 ```js
 var array = [1, "Pedro", true, false, "Juan"];
@@ -68,7 +68,7 @@ Como ejercicio intenta reemplazar el último elemento ("Juan") por otro valor.
 
 ## Insertando nuevos elementos
 
-Es posible insertar nuevos elementos en un arreglo (puede estar vacío o tener elementos). Por ejemplo:
+Es posible insertar nuevos elementos en un arreglo (puede estar vacío o tener elementos) con [`push`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/push), por ejemplo:
 
 ```js
 var array = ["Pedro"];
@@ -87,14 +87,14 @@ El método `splice` se utiliza tanto para insertar como eliminar elementos. Para
 
 ## Eliminando elementos
 
-Para eliminar elementos de un arreglo utilizas el método `splice`. Por ejemplo:
+Para eliminar elementos de un arreglo utilizas el método [`splice`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/splice), por ejemplo:
 
 ```js
 var array = ["Pedro", "Germán", "Diana"];
 array.splice(1, 1); // ["Pedro", "Diana"]
 ```
 
-El método `splice` recibe uno o dos argumentos cuando quieres eliminar elementos: el índice del elemento que quieres eliminar y la cantidad de elementos a eliminar. Si omites el segundo argumento se eliminarán todos los elementos después del índice que hayas especificado en el primer argumento. Por ejemplo:
+  El método `splice` recibe uno o dos argumentos cuando quieres eliminar elementos: el índice del elemento que quieres eliminar y la cantidad de elementos a eliminar. Si omites el segundo argumento se eliminarán todos los elementos después del índice que hayas especificado en el primer argumento, por ejemplo:
 
 ```js
 var array = ["Pedro", "Germán", "Diana"];

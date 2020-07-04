@@ -61,7 +61,7 @@ while (true) {
 }
 ```
 
-¿Qué crees que va a ocurrir? Antes de ejecutarlo debes saber que puedes interrumpir cualquier programa oprimiendo `Ctrl` + `C` :)
+¿Qué crees que va a ocurrir? Antes de ejecutarlo debes saber que puedes interrumpir cualquier programa oprimiendo `Ctrl` + `C`.
 
 El código anterior crea lo que en programación llamamos un **ciclo infinito**. Intenta evitarlos.
 

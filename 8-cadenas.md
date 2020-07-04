@@ -4,7 +4,7 @@ Las cadenas de texto (strings) son uno de los tipos de datos más importantes en
 
 ## Obteniendo la longitud de una cadena
 
-Abre la consola de Node.js y escribe `"hola".length`:
+Abre la consola de Node.js y escribe [`"hola".length`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/length):
 
 ```
 $ node
@@ -30,7 +30,7 @@ Ten en cuenta que los espacios también cuentan en la longitud de la cadena:
 
 ## Recorriendo cadenas
 
-Puedes obtener los caracteres de una posición específica igual que con los arreglos. Por ejemplo, desde la consola de Node.js:
+Puedes obtener los caracteres de una posición específica igual que con los arreglos, por ejemplo, desde la consola de Node.js:
 
 ```
 $ node
@@ -58,7 +58,7 @@ for (var i=0; i < str.length; i++) {
 
 ## Partiendo cadenas
 
-En ocasiones es útil convertir una cadena en un arreglo. Para eso podemos utilizar el método `split` que nos permite dividir una cadena de diferentes formas. Abre la consola de Node.js y ejecuta lo siguiente:
+En ocasiones es útil convertir una cadena en un arreglo. Para eso podemos utilizar el método [`split`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/split) que nos permite dividir una cadena de diferentes formas. Abre la consola de Node.js y ejecuta lo siguiente:
 
 ```
 $ node
@@ -68,15 +68,15 @@ $ node
 [ 'Hola', 'mundo' ]
 ```
 
-El método `split` recibe el caracter por el que quieres partir la cadena. Por ejemplo, podemos partir una cadena por comas:
+El método `split` recibe el caracter por el que quieres partir la cadena, por ejemplo, podemos partir una cadena por comas:
 
 ```
 $ node
-> "prueba,separar,cadenas".split(" ")
+> "prueba,separar,cadenas".split(",")
 [ 'prueba', 'separar', 'cadenas' ]
 ```
 
-Si quieres unir un arreglo en una cadena puedes utilizar el método `join`:
+Si quieres unir un arreglo en una cadena puedes utilizar el método [`join`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/join):
 
 ```
 $ node
@@ -84,7 +84,7 @@ $ node
 'Hola mundo'
 ```
 
-El método `join` recibe un argumento que es el caracter que se va a utilizar para separar los elementos. Por ejemplo, podemos unir un arreglo con guiones:
+El método `join` recibe un argumento que es el caracter que se va a utilizar para separar los elementos, por ejemplo, podemos unir un arreglo con guiones:
 
 ```
 $ node
@@ -104,7 +104,7 @@ $ node
 
 Sobre las cadenas de texto podemos llamar varios métodos interesantes. Veamos algunos de ellos:
 
-Los métodos `toLowerCase()` y `toUpperCase()` nos permiten convertir una cadena a minúsculas y mayúsculas respectivamente:
+Los métodos [`toLowerCase()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/toLowerCase) y [`toUpperCase()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/toUpperCase) nos permiten convertir una cadena a minúsculas y mayúsculas respectivamente:
 
 ```
 $ node
@@ -114,7 +114,7 @@ $ node
 'HOLA'
 ```
 
-Los métodos `startsWith()` y `endsWith()` nos permiten saber si una cadena comienza o termina con una subcadena específica. Ten cuidado porque estos métodos tienen en cuenta mayúsculas y minúsculas:
+Los métodos [`startsWith()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/startsWith) y [`endsWith()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/endsWith) nos permiten saber si una cadena comienza o termina con una subcadena específica. Ten cuidado porque estos métodos tienen en cuenta mayúsculas y minúsculas:
 
 ```
 > "Hola Mundo".startsWith("Hola")
@@ -127,14 +127,14 @@ true
 false
 ```
 
-También es posible anidar estos métodos. Por ejemplo, para verificar si una cadena comienza con una subcadena específica podemos primero convertir a minúsculas y después si utilizar el `startsWith`:
+También es posible anidar estos métodos, por ejemplo, para verificar si una cadena comienza con una subcadena específica podemos primero convertir a minúsculas y después si utilizar el `startsWith`:
 
 ```
 > "Hola Mundo".toLowerCase().startsWith("hola")
 true
 ```
 
-Puedes obtener una porción de la cadena con el método `substr` que recibe dos argumentos: el índice desde el cuál se va a retornar la subcadena y, opcionalmente, el número de caracteres que se quiere extraer. Si se omite el segundo argumento se extrae hasta el final de la cadena:
+Puedes obtener una porción de la cadena con el método [`substr()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/substr) (_ hay una advertencia de developer.mozilla.org que este método está en desuso a pesar que no se considere obsoleta_) que recibe dos argumentos: el índice desde el cuál se va a retornar la subcadena y, opcionalmente, el número de caracteres que se quiere extraer. Si se omite el segundo argumento se extrae hasta el final de la cadena:
 
 ```
 > "Hola Mundo".substr(0, 4)
@@ -143,7 +143,7 @@ Puedes obtener una porción de la cadena con el método `substr` que recibe dos 
 'Mundo'
 ```
 
-**Nota:** Ten cuidado porque también existe un método `substring` que se diferencia de `substr` por el segundo argumento. A diferencia de `substr`, `substring` recibe la posición hasta donde se desea extraer la cadena. Por ejemplo:
+**Nota:** Ten cuidado porque también existe un método [`substring`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/substring) que se diferencia de `substr` por el segundo argumento. A diferencia de `substr`, `substring` recibe la posición hasta donde se desea extraer la cadena, por ejemplo:
 
 ```
 > "Bienvenido!".substr(4, 6)

@@ -18,7 +18,7 @@ Atom es un editor de texto gratis y de código abierto que puedes descargar en [
 
 La siguiente imagen muestra varios elementos interesantes de Atom:
 
-![Atom Editor](https://s3.amazonaws.com/makeitreal/images/books/atom-editor-js.jpg)
+![Atom Editor](images/atom-editor-js.jpg)
 
 El archivo que aparece en la imagen es un archivo JavaScript que no tiene formato (es solo texto). [Atom](https://atom.io/) automáticamente resalta el código con colores para hacerlo más legible.
 
@@ -30,7 +30,7 @@ Por último, cuando abres una carpeta con [Atom](https://atom.io/), en el panel 
 
 Para crear un nuevo archivo selecciona **File -> New File** del menú principal o utiliza el atajo `Ctrl + N` (`Cmd + N` en Mac):
 
-![Atom - Nuevo archivo](https://s3.amazonaws.com/makeitreal/images/books/atom-new-file.jpg)
+![Atom - Nuevo archivo](images/atom-new-file.jpg)
 
 Fíjate que en el menú principal siempre vas a encontrar el atajo que puedes utilizar para evitar utilizar tanto el mouse y volverte más productivo(a).
 

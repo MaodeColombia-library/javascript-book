@@ -11,7 +11,7 @@ var persona = {
 }
 ```
 
-En este ejemplo estamos creando un objeto y lo estamos almacenando en la variable `persona`. Un objeto se define utilizando corchetes `{}`. Las propiedades se separan con coma (`,`) y las llaves y valores se separan con dos puntos (`:`).
+En este ejemplo estamos creando un objeto y lo estamos almacenando en la variable `persona`. Un objeto se define utilizando corchetes `{}`. Las propiedades se separan con coma `,` y las llaves y valores se separan con dos puntos `:`.
 
 En este objeto estamos almacenando la información de una persona, pero en un objeto podemos almacenar cualquier tipo de información que requiera esa asociación llave-valor.
 
