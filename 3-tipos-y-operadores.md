@@ -4,62 +4,36 @@ En este capítulo vamos a hablar sobre cadenas de texto, números y booleanos \(
 
 ## Cadenas de texto
 
-Una cadena de texto es un conjunto de caracteres encerrados entre comillas simples \(`'`\) o dobles \(`"`\). Por ejemplo:
+Una cadena de texto es un conjunto de caracteres encerrados entre comillas simples `'` o dobles `"`, por ejemplo:
 
 ```javascript
 "Texto entre comillas dobles"
 'Texto entre comillas simples'
 ```
 
-Aunque parece fácil, existen tres errores comunes al definir una cadena de texto para que los tengas en cuenta e intentes evitarlos:
+    Si eventualmente lo que se requiere es mostrar las comillas dentro del texto, se puede usar comillas simples para el texto total y commillas dobles para el texto que se quiere entre commillas o viseversa.
 
-1. Olvidarse de la comilla de cierre. Por ejemplo:
+    ```javascript
+    'Y él dijo: "Hola Mundo"'
+    ```
 
-   ```text
-   "Hola mundo
-   ```
+    ```javascript
+    "Y él dijo: 'Hola Mundo'"
+    ```
 
-2. Cerrar la cadena con la comilla incorrecta \(p.e. abrir la cadena con comilla doble y cerrarla con comilla sencilla\). Por ejemplo:
+    _Lo importante es que el texto no contenga la comillas diferentes que se utilizó para definir la cadena._
 
-   ```text
-   "Hola mundo'
-   ```
+   o tambien se puede recurrir al backslash `\` \(Alt + 92\), el cual si está dentro de una una cadena de texto simboliza que es el siguiente caracter tiene un significado especial, como `\n` salto de linea , `\r` retorno de carro , `\t` tab [entre otros](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions), [mas](https://www.gnu.org/software/emacs/manual/html_node/elisp/Basic-Char-Syntax.html).
 
-3. Insertar el mismo tipo de comillas dentro de la cadena de texto. Por ejemplo:    
-4. 5.  
-6. 7.   ```text
-   "Y él dijo: "Hola Mundo""
-   'Hol'a mundo'
-   ```
+    ```javascript
+    "Y 'él dijo': \"Hola mundo\""
+    ```
 
-en relación con este ultimo, si eventualmente lo que se requiere es generar las comillas dentro del texto se recurre al backslash `\` \(Alt + 92\) el cual si esta dentro de una 
+    O
 
-```text
-
-```
-
- Para solucionar el último error \(punto 3\) podemos encerrar la primera cadena entre comillas simples y la segunda entre comillas dobles para que funcione:
-
-```javascript
-"Hol'a mundo"
-'Y él dijo: "Hola mundo"'
-```
-
-**Recuerda:** _Lo importante es que el texto no contenga la comilla que se utilizó para definir la cadena_.
-
-Pero ¿qué pasa si tenemos un texto con comillas simples y dobles? En ese caso tendríamos que utilizar el caracter de escape `\` como en el siguiente ejemplo:
-
-```javascript
-'Y \'él dijo\': "Hola mundo"'
-```
-
-O
-
-```javascript
-"Y 'él dijo': \"Hola mundo\""
-```
-
-En el primer ejemplo escapamos con `\` las comillas simples porque con esas fue que encerramos el texto, mientras que en el segundo ejemplo escapamos las comillas dobles porque con esas fue que encerramos el texto.
+    ```javascript
+    'Y \'él dijo\': "Hola mundo"'
+    ```
 
 ### Imprimiendo una cadena de texto
 
@@ -227,4 +201,3 @@ En los dos ejemplos estamos comparando el número `1` con la cadena de texto `"1
    ```
 
 4. ¿Cuál es la diferencia entre `==` y `===` en JavaScript?
-
