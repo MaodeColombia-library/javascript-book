@@ -25,21 +25,27 @@ Aunque parece fácil, existen tres errores comunes al definir una cadena de text
    "Hola mundo'
    ```
 
-3. Insertar el mismo tipo de comillas dentro de la cadena de texto. Por ejemplo:
-
-   ```text
+3. Insertar el mismo tipo de comillas dentro de la cadena de texto. Por ejemplo:    
+4. 5.  
+6. 7.   ```text
    "Y él dijo: "Hola Mundo""
    'Hol'a mundo'
    ```
 
-Para solucionar el último error \(punto 3\) podemos encerrar la primera cadena entre comillas simples y la segunda entre comillas dobles para que funcione:
+en relación con este ultimo, si eventualmente lo que se requiere es generar las comillas dentro del texto se recurre al backslash `\` \(Alt + 92\) el cual si esta dentro de una 
+
+```text
+
+```
+
+ Para solucionar el último error \(punto 3\) podemos encerrar la primera cadena entre comillas simples y la segunda entre comillas dobles para que funcione:
 
 ```javascript
 "Hol'a mundo"
 'Y él dijo: "Hola mundo"'
 ```
 
-**Recuerda:** Lo importante es que el texto no contenga la comilla que se utilizó para definir la cadena.
+**Recuerda:** _Lo importante es que el texto no contenga la comilla que se utilizó para definir la cadena_.
 
 Pero ¿qué pasa si tenemos un texto con comillas simples y dobles? En ese caso tendríamos que utilizar el caracter de escape `\` como en el siguiente ejemplo:
 
