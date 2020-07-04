@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Inicio](README.md)
+* [Introducción a JavaScript](README.md)
 * [El editor de texto](0-editor-de-texto.md)
 * [La línea de comandos](1-linea-de-comandos.md)
 * [Primeros pasos](2-introduccion.md)
