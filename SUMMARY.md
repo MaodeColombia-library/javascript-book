@@ -1,7 +1,10 @@
+# Table of contents
+
 * [Inicio](README.md)
 * [El editor de texto](0-editor-de-texto.md)
 * [La línea de comandos](1-linea-de-comandos.md)
 * [Primeros pasos](2-introduccion.md)
+* [Números](numeros.md)
 * [Tipos y operadores](3-tipos-y-operadores.md)
 * [Variables](4-variables.md)
 * [Condicionales](5-condicionales.md)
@@ -11,3 +14,4 @@
 * [Funciones](9-funciones.md)
 * [Objetos literales](10-objetos.md)
 * [Manipulación de archivos](11-archivos.md)
+

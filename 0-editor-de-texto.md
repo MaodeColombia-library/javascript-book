@@ -2,7 +2,7 @@
 
 Para escribir código vas a necesitar un **editor de texto**. Un **editor de texto** es una aplicación que nos permite crear y editar archivos de texto.
 
-A diferencia de un procesador de palabras (como Microsoft Word), un editor de texto se utiliza para crear archivos de texto **sin formato**.
+A diferencia de un procesador de palabras \(como Microsoft Word\), un editor de texto se utiliza para crear archivos de texto **sin formato**.
 
 Cada sistema operativo trae algún editor de texto como **Bloc de Notas** en Windows o **TextEdit** en Mac. Sin embargo, existen editores de texto especializados para programadores que tienen varias ventajas sobre el editor que viene en tu sistema operativo:
 
@@ -18,9 +18,9 @@ Atom es un editor de texto gratis y de código abierto que puedes descargar en [
 
 La siguiente imagen muestra varios elementos interesantes de Atom:
 
-![Atom Editor](images/atom-editor-js.jpg)
+![Atom Editor](.gitbook/assets/atom-editor-js.jpg)
 
-El archivo que aparece en la imagen es un archivo JavaScript que no tiene formato (es solo texto). [Atom](https://atom.io/) automáticamente resalta el código con colores para hacerlo más legible.
+El archivo que aparece en la imagen es un archivo JavaScript que no tiene formato \(es solo texto\). [Atom](https://atom.io/) automáticamente resalta el código con colores para hacerlo más legible.
 
 Fíjate cómo, en la última línea, [Atom](https://atom.io/) nos ayuda a completar el código ahorrando tiempo de desarrollo.
 
@@ -28,15 +28,15 @@ Por último, cuando abres una carpeta con [Atom](https://atom.io/), en el panel 
 
 ### Crear un archivo
 
-Para crear un nuevo archivo selecciona **File -> New File** del menú principal o utiliza el atajo `Ctrl + N` (`Cmd + N` en Mac):
+Para crear un nuevo archivo selecciona **File -&gt; New File** del menú principal o utiliza el atajo `Ctrl + N` \(`Cmd + N` en Mac\):
 
-![Atom - Nuevo archivo](images/atom-new-file.jpg)
+![Atom - Nuevo archivo](.gitbook/assets/atom-new-file.jpg)
 
-Fíjate que en el menú principal siempre vas a encontrar el atajo que puedes utilizar para evitar utilizar tanto el mouse y volverte más productivo(a).
+Fíjate que en el menú principal siempre vas a encontrar el atajo que puedes utilizar para evitar utilizar tanto el mouse y volverte más productivo\(a\).
 
 ### Guardar un archivo
 
-Para guardar el archivo selecciona la opción **File -> Save** del menú principal o utiliza el atajo `Ctrl + S` (`Cmd + S` en Mac).
+Para guardar el archivo selecciona la opción **File -&gt; Save** del menú principal o utiliza el atajo `Ctrl + S` \(`Cmd + S` en Mac\).
 
 Ingresa el nombre con el que quieres guardar el archivo y oprime **Save**.
 
@@ -44,30 +44,25 @@ Ingresa el nombre con el que quieres guardar el archivo y oprime **Save**.
 
 Existen tres formas en que puedes abrir un archivo o una carpeta:
 
-1. Arrastra el archivo hasta Atom (o al ícono de Atom si no está abierto).
-
-2. Selecciona **File -> Open** en el menú principal, selecciona el archivo o la carpeta que quieres abrir y oprime el botón **Open**.
-
+1. Arrastra el archivo hasta Atom \(o al ícono de Atom si no está abierto\).
+2. Selecciona **File -&gt; Open** en el menú principal, selecciona el archivo o la carpeta que quieres abrir y oprime el botón **Open**.
 3. Utiliza el atajo `Ctrl + O`, selecciona el archivo o la carpeta que quieres abrir y oprime el botón **Open**.
 
 Cuando abres una carpeta aparecerá a la izquierda un panel que muestra los archivos y carpetas que están dentro de la carpeta que abriste.
 
-
 ## Evalúate
 
 1. Crea una nueva carpeta llamada `mi-proyecto` en el Escritorio y ábrela con [Atom](https://atom.io/).
-
 2. Desde [Atom](https://atom.io/) crea un nuevo archivo llamado `archivo1.txt` dentro de la carpeta `mi-proyecto`.
-
 3. Desde [Atom](https://atom.io/) crea una nueva carpeta llamada `imagenes`.
-
 4. Desde [Atom](https://atom.io/) crea un nuevo archivo llamado `archivo2.txt` dentro de la carpeta `imagenes`.
 
 Al final, la estructura de la carpeta debería quedar de la siguiente forma:
 
-````
+```text
 - mi-proyecto
   - archivo1.txt
   - imagenes
      - archivo2.txt
-````
+```
+

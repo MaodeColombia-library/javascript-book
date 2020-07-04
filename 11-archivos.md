@@ -1,6 +1,6 @@
 # Manipulación de archivos
 
-En Node.js es posible manipular archivos (crear, leer, modificar, mover, etc.). En este capítulo vamos a ver tres de estas operaciones: leer, escribir y verificar si un archivo o carpeta existe.
+En Node.js es posible manipular archivos \(crear, leer, modificar, mover, etc.\). En este capítulo vamos a ver tres de estas operaciones: leer, escribir y verificar si un archivo o carpeta existe.
 
 **Nota:** Ten en cuenta que esto sólo aplica para Node.js, desde el navegador **no** es posible manipular archivos, sería muy inseguro.
 
@@ -8,7 +8,7 @@ En Node.js es posible manipular archivos (crear, leer, modificar, mover, etc.). 
 
 La forma más fácil de leer un archivo con Node.js es utilizando el método `readFile` del módulo `fs`. Para empezar crea un nuevo archivo llamado `contenido.txt` con el siguiente contenido:
 
-```
+```text
 Primera línea
 Segunda línea
 Tercera línea
@@ -30,15 +30,14 @@ fs.readFile('contenido.txt', 'utf8', function(err, data) {
 
 Ejecútalo en la consola, debería mostrar el contenido del archivo y una línea en blanco al final:
 
-```
+```text
 $ node read.js
 Primera línea
 Segunda línea
 Tercera línea
-
 ```
 
-El método `readFile` recibe 3 argumentos: la ruta al archivo, la codificación y una función que va a ser invocada cuando se lea el archivo (a esta función se le llama **callback**).
+El método `readFile` recibe 3 argumentos: la ruta al archivo, la codificación y una función que va a ser invocada cuando se lea el archivo \(a esta función se le llama **callback**\).
 
 ### Leyendo archivos grandes
 
@@ -77,7 +76,7 @@ fs.writeFile("nuevo.txt", "Primera línea\nSegunda línea", function(err) {
 
 Ejecútalo en la consola y revisa que el archivo haya sido creado correctamente:
 
-```
+```text
 $ node write.js
 El archivo fue creado correctamente
 ```
@@ -116,3 +115,4 @@ fs.stat('nuevo.txt', function(err) {
   }
 })
 ```
+

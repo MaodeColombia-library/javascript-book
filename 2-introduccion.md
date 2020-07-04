@@ -1,4 +1,4 @@
-# Primeros Pasos
+# Primeros pasos
 
 En este libro vas a aprender las bases de [JavaScript](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/JavaScript_basics), que te serán útiles sin importar qué camino desees tomar más adelante, ya sea convertirte en Desarrollador Front End, Backend y/o Móvil.
 
@@ -10,14 +10,14 @@ Por último, nuestra recomendación es que transcribas y ejecutes cada uno de lo
 
 Para seguir los ejemplos de este libro vas a necesitar instalar [Node.js](https://nodejs.org/en/). Puedes verificar si ya está instalado en tu máquina abriendo una línea de comandos y ejecutando `node -v`. Si está instalado debería aparecer una línea similar a la siguiente:
 
-```
+```text
 $ node -v
 v8.5.0
 ```
 
 La versión puede ser diferente, y cualquier versión mayor a 6.0.0 está bien.
 
-Si ves un mensaje diciendo que el comando no fue encontrado, significa que aún no lo tienes instalado. Puedes encontrar las instrucciones para instalarlo en el siguiente enlace: https://github.com/makeitrealcamp/node-installation.
+Si ves un mensaje diciendo que el comando no fue encontrado, significa que aún no lo tienes instalado. Puedes encontrar las instrucciones para instalarlo en el siguiente enlace: [https://github.com/makeitrealcamp/node-installation](https://github.com/makeitrealcamp/node-installation).
 
 Una vez que tengas instalado [Node.js](https://nodejs.org/en/) y lo hayas verificado, continúa. En las siguientes secciones vamos a ver cómo ejecutar código JavaScript tanto en el navegador como en [Node.js](https://nodejs.org/en/).
 
@@ -27,25 +27,25 @@ Existen dos formas de ejecutar código JavaScript en los navegadores: a través 
 
 ### A través de las herramientas de desarrollador
 
-Las herramientas de desarrollador (en inglés developer tools) son un conjunto de herramientas integradas al navegador que utilizan los Desarrolladores Front End para analizar, depurar y mejorar su código.
+Las herramientas de desarrollador \(en inglés developer tools\) son un conjunto de herramientas integradas al navegador que utilizan los Desarrolladores Front End para analizar, depurar y mejorar su código.
 
 La forma más fácil de abrir las herramientas de desarrollador en cualquier navegador es hacer click en cualquier parte de la página y seleccionar la opción "Inspeccionar Elemento" en el menú desplegable que aparece.
 
 También existe un atajo del teclado para abrir y cerrar las herramientas de desarrollador. El atajo para la mayoría de navegadores en Mac es `Alt` + `Command` + `I`. Para PC es `Ctrl` + `Shift` + `I`.
 
-Una de las herramientas que incluyen las herramientas de desarrollador es la **Consola**, que la puedes abrir haciendo click en la pestaña "Consola" (o en Inglés "Console") como se muestra en la siguiente imagen.
+Una de las herramientas que incluyen las herramientas de desarrollador es la **Consola**, que la puedes abrir haciendo click en la pestaña "Consola" \(o en Inglés "Console"\) como se muestra en la siguiente imagen.
 
-![Herramientas de Desarrollador](images/developer-tools.jpg)
+![Herramientas de Desarrollador](.gitbook/assets/developer-tools.jpg)
 
 En la **Consola** podemos escribir una expresión de JavaScript, oprimir Enter, y ver el resultado de esa expresión en la siguiente línea. Por ejemplo, escribe `1+2` y oprime Enter. Deberás ver el número `3` en la siguiente línea como se muestra en la siguiente imagen.
 
-![La Consola](images/developer-tools-console.jpg)
+![La Consola](.gitbook/assets/developer-tools-console.jpg)
 
 ### A través de un documento HTML
 
 La otra forma de ejecutar código JavaScript en el navegador es dentro de un documento HTML. Crea un archivo llamado `index.html` y pega el siguiente contenido:
 
-```html
+```markup
 <!DOCTYPE html>
 <html>
   <head>
@@ -63,13 +63,13 @@ La otra forma de ejecutar código JavaScript en el navegador es dentro de un doc
 
 Aunque insertar el código directamente dentro del HTML funciona, se considera una mala práctica. Crea un nuevo archivo llamado `app.js` en la misma carpeta donde se encuentre `index.html` y pega el siguiente contenido:
 
-```js
+```javascript
 alert("Hola Amigo");
 ```
 
 Ahora modifica `index.html` con el siguiente contenido:
 
-```html
+```markup
 <!DOCTYPE html>
 <html>
   <head>
@@ -91,7 +91,7 @@ Existen dos formas de ejecutar código JavaScript en [Node.js](https://nodejs.or
 
 Para abrir la consola de Node.js ejecuta el siguiente comando desde la línea de comandos:
 
-```
+```text
 $ node
 >
 ```
@@ -100,7 +100,7 @@ La consola de Node.js nos permite escribir una **expresión** de JavaScript, opr
 
 Por ejemplo, si escribimos `1+2` y oprimimos `Enter` debería mostrar `3` en la siguiente línea:
 
-```
+```text
 $ node
 > 1 + 2
 3
@@ -109,7 +109,7 @@ $ node
 
 Para salir de la consola oprime `Ctrl` + `D`.
 
-**Nota:** En JavaScript el punto y coma (`;`) al final de cada expresión es opcional. Cuando estemos trabajando en la consola de Node.js los vamos a omitir. Sin embargo, cuando mostremos código que va a ir en un archivo los incluímos porque es una buena práctica.
+**Nota:** En JavaScript el punto y coma \(`;`\) al final de cada expresión es opcional. Cuando estemos trabajando en la consola de Node.js los vamos a omitir. Sin embargo, cuando mostremos código que va a ir en un archivo los incluímos porque es una buena práctica.
 
 ### Desde un archivo
 
@@ -117,13 +117,13 @@ La otra forma de ejecutar código JavaScript en [Node.js](https://nodejs.org/en/
 
 Crea un archivo llamado `app.js`, ábrelo con tu editor favorito y pega el siguiente contenido:
 
-```js
+```javascript
 console.log("Hola Mundo!");
 ```
 
-Guárdalo y ejecuta `node app.js` sobre la línea de comandos (asegúrate de estar ubicado sobre la carpeta donde se encuentra el archivo). Deberías ver el texto "Hola Mundo" en la siguiente línea:
+Guárdalo y ejecuta `node app.js` sobre la línea de comandos \(asegúrate de estar ubicado sobre la carpeta donde se encuentra el archivo\). Deberías ver el texto "Hola Mundo" en la siguiente línea:
 
-```
+```text
 $ node app.js
 Hola Mundo
 ```
@@ -136,7 +136,7 @@ Cambia el texto por cualquier otro y vuelve a ejecutar el archivo.
 
 Veamos ahora qué pasa si cometemos algún error en nuestro código. Por ejemplo, borra el caracter `l` de la palabra `console` y vuelve a ejecutar el archivo. Te debería aparecer un mensaje de error similar al siguiente:
 
-```
+```text
 /Users/germanescobar/Projects/node/app.js:1
 (function (exports, require, module, __filename, __dirname) { consoe.log("Hola Mundo");
                                                               ^
@@ -154,19 +154,19 @@ ReferenceError: consoe is not defined
     at bootstrap_node.js:535:3
 ```
 
-Toma un tiempo acostumbrarse a leer los mensajes de error de Node.js pero ahí está todo lo que necesitas saber para solucionarlo. El caracter `^` nos muestra dónde ocurrió el error (aunque está mezclado con otro código que genera Node.js) y debajo de esa línea una frase que dice `ReferenceError: consoe is not defined`.
+Toma un tiempo acostumbrarse a leer los mensajes de error de Node.js pero ahí está todo lo que necesitas saber para solucionarlo. El caracter `^` nos muestra dónde ocurrió el error \(aunque está mezclado con otro código que genera Node.js\) y debajo de esa línea una frase que dice `ReferenceError: consoe is not defined`.
 
 Hay veces en los que es fácil encontrar los errores, otras veces no es tan fácil. Lo que si es cierto es que a medida que vayas trabajando con el lenguaje vas a ir desarrollando una intuición que te va a permitir solucionar los errores más fácilmente, pero al principio es un proceso lento que es parte de ese aprendizaje.
 
 Cometamos otro error intencionalmente para ver un mensaje diferente. Vuelve a escribir `console` correctamente, pero ahora borra la comilla al final de la cadena de texto así:
 
-```js
+```javascript
 console.log("Hola Mundo);
 ```
 
 Y vuelve a ejecutar el archivo. Debería salir un mensaje como el siguiente:
 
-```
+```text
 /Users/germanescobar/Projects/node/app.js:1
 (function (exports, require, module, __filename, __dirname) { console.log("Hola Mundo);
                                                                           ^^^^^^^^^^^^^
@@ -191,14 +191,14 @@ Vuelve a agregar la comilla y verifica que se ejecute normalmente.
 
 Node.js ejecuta el archivo línea por línea, una después de la otra. Así que podemos agregar una segunda línea a nuestro archivo:
 
-```js
+```javascript
 console.log("Hola Mundo");
 console.log("Esto está muy bacano");
 ```
 
 El ejecutar el archivo deberías ver el siguiente resultado:
 
-```
+```text
 $ node app.js
 Hola Mundo
 Esto está muy bacano
@@ -208,7 +208,7 @@ Esto está muy bacano
 
 Los comentarios se utilizan para documentar o aclarar nuestro código y son ignorados al ejecutar el archivo. En JavaScript se utilizan los caracteres `//` para crear un comentario de una línea. Por ejemplo:
 
-```js
+```javascript
 // este es un comentario de una línea
 console.log("Hola Mundo");
 console.log("Esto está muy bacano"); // este es otro comentario
@@ -216,28 +216,25 @@ console.log("Esto está muy bacano"); // este es otro comentario
 
 También puedes crear comentarios de múltiples líneas encerrando el texto entre `/*` y `*/`. Por ejemplo:
 
-```js
+```javascript
 /*
  este es un comentario
  de varias líneas
  console.log("esto no aparece al ejecutar el archivo")
 */
 console.log("Hola Mundo");
-console.log("Esto está muy bacano");  
+console.log("Esto está muy bacano");
 ```
 
 Fíjate que la última línea del comentario es código JavaScript válido. Sin embargo, **ese código no se ejecuta porque está como comentario**.
 
 ## Evalúate
 
-Al final de cada capítulo encontrarás algunas preguntas sobre los conceptos más importantes. No te preocupes si tienes que repasar el capítulo para encontrar las respuestas. Lo que sí te recomendamos es que escribas las respuestas en alguna parte (no importa si es en papel o digitalmente) para que afiances los conceptos.
+Al final de cada capítulo encontrarás algunas preguntas sobre los conceptos más importantes. No te preocupes si tienes que repasar el capítulo para encontrar las respuestas. Lo que sí te recomendamos es que escribas las respuestas en alguna parte \(no importa si es en papel o digitalmente\) para que afiances los conceptos.
 
 1. ¿Qué es Node.js?
-
 2. Nombre al menos 2 formas en las que podemos ejecutar código JavaScript.
-
 3. ¿Cómo imprimimos "Me gusta JavaScript!" desde un archivo de texto?
-
 4. ¿Cómo se ejecuta un archivo de JavaScript en Node.js?
-
 5. ¿Cómo se pueden definir comentarios en JavaScript?
+

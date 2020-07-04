@@ -1,4 +1,4 @@
-# Introducción a JavaScript
+# Inicio
 
 JavaScript se ha convertido en el lenguaje más popular de programación, y por una buena razón. JavaScript es el único lenguaje que entienden los navegadores como Internet Explorer, Chrome, etc. Y ahora, gracias a una plataforma llamada [Node.js](https://nodejs.org/en/), hoy es posible utilizar JavaScript fuera del navegador para crear todo tipo de aplicaciones: aplicaciones de escritorio, aplicaciones móviles, aplicaciones de la línea de comandos y backends de aplicaciones Web, entre otros.
 
@@ -18,12 +18,10 @@ En los siguientes capítulos nos concentraremos en cada una de las característi
 
 Al final de cada capítulo encontrarás algunas preguntas y ejercicios para que te auto-evalúes. No te preocupes si tienes que repasar el capítulo para encontrar las respuestas o buscar en Internet, de eso se trata.
 
----
-
 Esperamos que este libro sea útil y te ayude a dar los primeros pasos en este mundo apasionante que es la programación.
 
+  
+ Germán Escobar  
+ Fundador y CEO  
+ [makeitreal.camp](http://makeitreal.camp/)
 
-<br>
-Germán Escobar<br>
-Fundador y CEO<br>
-[makeitreal.camp](http://makeitreal.camp/)

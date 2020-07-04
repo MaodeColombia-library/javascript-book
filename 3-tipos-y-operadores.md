@@ -1,12 +1,12 @@
-# Tipos y Operadores
+# Tipos y operadores
 
-En este capítulo vamos a hablar sobre cadenas de texto, números y booleanos (verdadero o falso), que son tipos de datos básicos en JavaScript, y cómo realizar algunas operaciones con ellos. Empecemos con las cadenas de texto.
+En este capítulo vamos a hablar sobre cadenas de texto, números y booleanos \(verdadero o falso\), que son tipos de datos básicos en JavaScript, y cómo realizar algunas operaciones con ellos. Empecemos con las cadenas de texto.
 
 ## Cadenas de texto
 
-Una cadena de texto es un conjunto de caracteres encerrados entre comillas simples (`'`) o dobles (`"`). Por ejemplo:
+Una cadena de texto es un conjunto de caracteres encerrados entre comillas simples \(`'`\) o dobles \(`"`\). Por ejemplo:
 
-```js
+```javascript
 "Texto entre comillas dobles"
 'Texto entre comillas simples'
 ```
@@ -15,24 +15,26 @@ Aunque parece fácil, existen tres errores comunes al definir una cadena de text
 
 1. Olvidarse de la comilla de cierre. Por ejemplo:
 
-   ```
+   ```text
    "Hola mundo
    ```
-2. Cerrar la cadena con la comilla incorrecta (p.e. abrir la cadena con comilla doble y cerrarla con comilla sencilla). Por ejemplo:
 
-   ```
+2. Cerrar la cadena con la comilla incorrecta \(p.e. abrir la cadena con comilla doble y cerrarla con comilla sencilla\). Por ejemplo:
+
+   ```text
    "Hola mundo'
    ```
+
 3. Insertar el mismo tipo de comillas dentro de la cadena de texto. Por ejemplo:
 
-   ```
+   ```text
    "Y él dijo: "Hola Mundo""
    'Hol'a mundo'
    ```
 
-Para solucionar el último error (punto 3) podemos encerrar la primera cadena entre comillas simples y la segunda entre comillas dobles para que funcione:
+Para solucionar el último error \(punto 3\) podemos encerrar la primera cadena entre comillas simples y la segunda entre comillas dobles para que funcione:
 
-```js
+```javascript
 "Hol'a mundo"
 'Y él dijo: "Hola mundo"'
 ```
@@ -41,13 +43,13 @@ Para solucionar el último error (punto 3) podemos encerrar la primera cadena en
 
 Pero ¿qué pasa si tenemos un texto con comillas simples y dobles? En ese caso tendríamos que utilizar el caracter de escape `\` como en el siguiente ejemplo:
 
-```js
+```javascript
 'Y \'él dijo\': "Hola mundo"'
 ```
 
 O
 
-```js
+```javascript
 "Y 'él dijo': \"Hola mundo\""
 ```
 
@@ -55,15 +57,15 @@ En el primer ejemplo escapamos con `\` las comillas simples porque con esas fue 
 
 ### Imprimiendo una cadena de texto
 
-Para imprimir una cadena de texto en la línea de comandos (o en la consola del navegador) utilizamos `console.log` como hicimos en el capítulo anterior:
+Para imprimir una cadena de texto en la línea de comandos \(o en la consola del navegador\) utilizamos `console.log` como hicimos en el capítulo anterior:
 
-```js
+```javascript
 console.log('Y \'él dijo\': "Hola mundo"');
 ```
 
 Si guardas esa línea en un archivo llamado `strings.js` y lo ejecutas, el resultado debería ser el siguiente:
 
-```
+```text
 $ node strings.js
 Y 'él dijo': "Hola mundo"
 ```
@@ -72,13 +74,13 @@ Y 'él dijo': "Hola mundo"
 
 Es posible unir cadenas de texto con el operador `+`. Por ejemplo, abre la consola de Node.js y ejecuta lo siguiente:
 
-```js
+```javascript
 "Hola" + "Mundo" + "Cómo" + "Estás"
 ```
 
 Deberías ver algo como esto:
 
-```
+```text
 $ node
 > "Hola" + "Mundo" + "Cómo" + "Estás"
 HolaMundoCómoEstás
@@ -86,7 +88,7 @@ HolaMundoCómoEstás
 
 Fíjate que las palabras no se separan con espacio automáticamente, tenemos que agregar los espacios explícitamente:
 
-```
+```text
 $ node
 > console.log("Hola " + "Mundo " + "Cómo " + "Estás");
 Hola Mundo Cómo Estás
@@ -100,7 +102,7 @@ En este momento la concatenación de cadenas no es muy útil porque hubiesemos p
 
 Crea un nuevo archivo llamado `numbers.js` con el siguiente código:
 
-```js
+```javascript
 console.log(1 + 2)
 console.log(3 * 4 + 5)
 console.log(8 / 2)
@@ -108,7 +110,7 @@ console.log(8 / 2)
 
 Si lo ejecutas deberías ver algo así:
 
-```
+```text
 $ node numbers.js
 3
 17
@@ -117,9 +119,9 @@ $ node numbers.js
 
 Fíjate en la segunda línea del ejemplo. JavaScript sigue el mismo estandar que en matemáticas, y por lo tanto la multiplicación se ejecuta primero que la suma. Puedes cambiar el comportamiento con paréntesis. Por ejemplo, cambia la operación de la segunda línea por `3 * (4 + 5)`. El resultado ahora debería ser `27`.
 
-A diferencia de las cadenas de texto, los números **no** se encierran entre comillas de ninún tipo (de lo contrario JavaScript los trata como texto y no como números). Por ejemplo, abre la consola de Node.js y escribe `"1" + "2"`. El resultado ya no es `3`, es la cadena de texto `"12"`:
+A diferencia de las cadenas de texto, los números **no** se encierran entre comillas de ninún tipo \(de lo contrario JavaScript los trata como texto y no como números\). Por ejemplo, abre la consola de Node.js y escribe `"1" + "2"`. El resultado ya no es `3`, es la cadena de texto `"12"`:
 
-```
+```text
 $ node
 > "1" + "2"
 '12'
@@ -127,7 +129,7 @@ $ node
 
 **Debes tener cuidado al concatenar cadenas y hacer sumas**, porque los dos utilizan el mismo operador `+`. Por ejemplo, intenta lo siguiente en la consola de Node.js:
 
-```
+```text
 $ node
 > "1 + 2 es " + 1 + 2
 '1 + 2 es 12'
@@ -141,9 +143,9 @@ En el segundo ejemplo JavaScript realiza primero la operación `(1 + 2)`, que da
 
 ### Valores y expresiones booleanas
 
-Existen dos valores booleanos en programación: verdadero (`true`) y falso (`false`). Abre la consola de Node.js, escribe `true` y oprime Enter, después escribe `false` y oprime Enter. El resultado debe ser el siguiente:
+Existen dos valores booleanos en programación: verdadero \(`true`\) y falso \(`false`\). Abre la consola de Node.js, escribe `true` y oprime Enter, después escribe `false` y oprime Enter. El resultado debe ser el siguiente:
 
-```
+```text
 $ node
 > true
 true
@@ -162,7 +164,7 @@ También es posible escribir **expresiones** que evalúen a `true` o `false`. Es
 
 El resultado debería ser el siguiente:
 
-```
+```text
 $ node
 > 5 > 3
 true
@@ -182,11 +184,11 @@ false
 true
 ```
 
-A los operadorres `<`, `>`, `<=`, `>=`, `===`, `!==` se les llama **operadores lógicos** y se utilizan para crear expresiones que se evalúan a un valor booleano: verdadero (`true`) o falso (`false`).
+A los operadorres `<`, `>`, `<=`, `>=`, `===`, `!==` se les llama **operadores lógicos** y se utilizan para crear expresiones que se evalúan a un valor booleano: verdadero \(`true`\) o falso \(`false`\).
 
-En JavaScript existe el operador `==` y el `===` (así como el `!=` y `!==`). Veamos dos ejemplos para explicar la diferencia:
+En JavaScript existe el operador `==` y el `===` \(así como el `!=` y `!==`\). Veamos dos ejemplos para explicar la diferencia:
 
-```
+```text
 $ node
 > 1 == "1"
 true
@@ -202,20 +204,21 @@ En los dos ejemplos estamos comparando el número `1` con la cadena de texto `"1
 
 1. ¿Cuál es el problema con la siguiente cadena de texto y de qué formas lo podríamos solucionar?
 
-   ```
+   ```text
    "Palabras: "Agua", "Tierra""
    ```
 
 2. ¿Cuál sería el resultado de la siguiente expresión?
 
-   ```
+   ```text
    3 + "3"
    ```
 
 3. ¿Qué problema tiene el siguiente código y cómo lo podemos solucionar para que evalúe a `true`?
 
-   ```
+   ```text
    3 = 3
    ```
 
 4. ¿Cuál es la diferencia entre `==` y `===` en JavaScript?
+

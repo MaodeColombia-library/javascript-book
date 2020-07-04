@@ -1,9 +1,8 @@
-# Iteraciones o ciclos
+# Ciclos
 
 Los ciclos nos permiten repetir la ejecución de un código varias veces. Imagina que quisiéramos repetir la frase "Hola mundo" 5 veces. Podríamos hacerlo manualmente. Crea un archivo llamado `loops.js` y escribe el siguiente código:
 
-
-```js
+```javascript
 console.log("Hola Mundo");
 console.log("Hola Mundo");
 console.log("Hola Mundo");
@@ -13,7 +12,7 @@ console.log("Hola Mundo");
 
 Ejecútalo y deberías ver la frase "Hola mundo" 5 veces en tu pantalla:
 
-```
+```text
 $ node loops.js
 Hola mundo
 Hola mundo
@@ -24,7 +23,7 @@ Hola mundo
 
 Ahora imagina que quisieramos repetirlo 850 veces. Ya no sería tan divertido copiar todo ese número de líneas en el archivo. Podemos entonces utilizar un ciclo. Un ciclo se crea utilizando la palabra clave `while` seguido de una condición, que va a definir el número de veces que se va a repetir ese ciclo. Reemplaza el contenido del archivo `loops.rb` por el siguiente:
 
-```js
+```javascript
 var i = 0;
 while (i < 850) {
   console.log("Hola mundo");
@@ -32,9 +31,9 @@ while (i < 850) {
 }
 ```
 
-Ejecútalo y revisa que la frase "Hola mundo" aparezca 850 veces. Como ejercicio modifícalo para que aparezca el valor de `i` antes de cada frase. Debería salir algo así (omitimos algunas líneas para no gastar tanto pap...ehhh...espacio en disco):
+Ejecútalo y revisa que la frase "Hola mundo" aparezca 850 veces. Como ejercicio modifícalo para que aparezca el valor de `i` antes de cada frase. Debería salir algo así \(omitimos algunas líneas para no gastar tanto pap...ehhh...espacio en disco\):
 
-```
+```text
 $ node loops.js
 0 Hola mundo
 1 Hola mundo
@@ -47,7 +46,7 @@ $ node loops.js
 
 Un ciclo en JavaScript tiene la siguiente sintaxis:
 
-```js
+```javascript
 while (<condicion>) {
   // acá va el cuerpo del ciclo, el código que se va a repetir mientras la condición se cumpla
 }
@@ -55,7 +54,7 @@ while (<condicion>) {
 
 La condición puede ser cualquier valor o expresión booleana. El cuerpo del ciclo se va a ejecutar mientras que la condición se cumpla. Por ejemplo, crea un archivo llamado `inifiniteLoop.js` que contenga lo siguiente:
 
-```js
+```javascript
 while (true) {
   console.log("Hola Mundo");
 }
@@ -67,7 +66,7 @@ El código anterior crea lo que en programación llamamos un **ciclo infinito**.
 
 En el momento en el que la condición deja de cumplirse el ciclo se detiene y continúa con el resto del programa. Podemos crear un ciclo que nunca va a ejecutar el cuerpo del ciclo:
 
-```js
+```javascript
 while (false) {
   console.log("Hola mundo");
 }
@@ -77,7 +76,7 @@ Si ejecutas ese código no deberías ver ninguna frase `"Hola mundo"`.
 
 En vez de `true` o `false` puedes utilizar cualquier otra condición como lo hicimos en el ciclo que muestra `"Hola mundo"` 850 veces:
 
-```js
+```javascript
 var i = 0;
 while (i < 850) {
   console.log("Hola mundo");
@@ -89,11 +88,11 @@ Primero declaramos una variable `i` que inicia en 0. Cada vez que ingresa en el 
 
 ## for
 
-El `while` es todo lo que necesitas para hacer ciclos en JavaScript. Sin embargo, ese patrón que vimos en el ejemplo anterior en el que tenemos una **inicialización** (`var i = 0`), una **condición** (`i < 850`) y un **incrementador** (`i++`) es tan común, que JavaScript tiene un atajo para esto, el `for`.
+El `while` es todo lo que necesitas para hacer ciclos en JavaScript. Sin embargo, ese patrón que vimos en el ejemplo anterior en el que tenemos una **inicialización** \(`var i = 0`\), una **condición** \(`i < 850`\) y un **incrementador** \(`i++`\) es tan común, que JavaScript tiene un atajo para esto, el `for`.
 
 El `for` tiene la siguiente sintaxis:
 
-```js
+```javascript
 for (<inicialización>; <condición>; <incrementador>) {
   // el cuerpo del ciclo, el código que se repite mientras que la condición sea verdadera
 }
@@ -101,7 +100,7 @@ for (<inicialización>; <condición>; <incrementador>) {
 
 El ejemplo anterior lo podemos reescribir de la siguiente forma:
 
-```js
+```javascript
 for (var i=0; i < 850; i++) {
   console.log("Hola mundo");
 }
@@ -109,16 +108,16 @@ for (var i=0; i < 850; i++) {
 
 Son equivalentes, la única diferencia es que el inicializador, la condición y el incrementador están definidos en la misma línea, pero se ejecuta de la misma forma que el `while`:
 
-![Flujo de la iteración](images/iteration-flow2.png)
+![Flujo de la iteraci&#xF3;n](.gitbook/assets/iteration-flow2.png)
 
 * La **inicialización** se ejecuta antes de evaluar la **condición** por primera vez.
 * La **condición** se ejecuta cada vez que se itera.
 * El **cuerpo** se ejecuta cada vez que la **condición** se cumple.
 * El **incrementador** se ejecuta cada vez que el **cuerpo** se ejecuta, antes de volver a evaluar la **condición**.
 
-**Nota:** Tanto el inicializador, la condición y el incrementador son opcionales. Si quisieras podrías  hacer un ciclo infinito con un `for` de la siguiente forma:
+**Nota:** Tanto el inicializador, la condición y el incrementador son opcionales. Si quisieras podrías hacer un ciclo infinito con un `for` de la siguiente forma:
 
-```js
+```javascript
 for(;;) {
   // el cuerpo del ciclo también es opcional
 }
@@ -139,7 +138,7 @@ Para este ejemplo serían:
 
 Con esta información ya puedes implementar el ciclo con `while` o `for`, recuerda que son equivalentes. La solución utilizando un `while` sería:
 
-```js
+```javascript
 var i = 10;       // el inicializador
 while (i <= 20) { // la condición
   console.log(i);
@@ -149,7 +148,7 @@ while (i <= 20) { // la condición
 
 Podemos hacer lo mismo con un `for`:
 
-```js
+```javascript
 for (var i=10; i <= 20; i = i + 2) {
   console.log(i);
 }
@@ -162,7 +161,7 @@ Hagamos otro ejemplo. Imagina que queremos imprimir los números del 1 a al 100 
 3. El **incrementador** va a ser un decrementador en este caso, va a decrementar la variable en 1 cada iteración.
 4. El **cuerpo** debe imprimir la variable.
 
-```js
+```javascript
 var i = 100;
 while (i > 0) {
   console.log(i);
@@ -173,9 +172,7 @@ while (i > 0) {
 ## Evalúate
 
 1. ¿Cuáles son las partes de un ciclo?
-
 2. ¿Qué partes son opcionales y obligatorias en un `for`?
-
 3. Implementa el último ejemplo con un `for`.
-
 4. ¿Se te ocurre alguna forma en que podamos implementar el último ejemplo de alguna otra forma en que no tengamos que decrementar la variable, sino incrementarla?
+

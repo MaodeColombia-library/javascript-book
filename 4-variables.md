@@ -4,14 +4,14 @@ Las variables son uno de los conceptos básicos de la programación y nos permit
 
 Crea un archivo llamado `variables.js` y agrega lo siguiente:
 
-```js
+```javascript
 var name = "Germán"; // cámbialo por tu nombre
 console.log("Hola " + name);
 ```
 
-En este ejemplo estamos definiendo una variable con nombre `name` y le asignamos el valor "Germán" (o el valor que le hayas asignado). En la siguiente línea estamos utilizando concatenación de cadenas para mostrar la cadena de texto "Hola " seguido del valor que tenga en ese momento la variable `name`.
+En este ejemplo estamos definiendo una variable con nombre `name` y le asignamos el valor "Germán" \(o el valor que le hayas asignado\). En la siguiente línea estamos utilizando concatenación de cadenas para mostrar la cadena de texto "Hola " seguido del valor que tenga en ese momento la variable `name`.
 
-Las variables se crean con la palabra clave `var` seguido del nombre de la variable. Opcionalmente, le puedes asignar un valor a la variable utilizando el caracter igual y el valor que le quieras dar. El punto y coma (`;`) al final es opcional pero se considera una buena práctica tenerlo.
+Las variables se crean con la palabra clave `var` seguido del nombre de la variable. Opcionalmente, le puedes asignar un valor a la variable utilizando el caracter igual y el valor que le quieras dar. El punto y coma \(`;`\) al final es opcional pero se considera una buena práctica tenerlo.
 
 El nombre de una variable debe comenzar con `$`, `_` o una letra, y después puede contener letras, dígitos, `_` y `$`. Ejemplos de nombres válidos de variables incluyen `name`, `$element` y `_trains`.
 
@@ -21,20 +21,20 @@ Las palabras reservadas de JavaScript no se pueden usar como nombres de variable
 
 Como buena práctica se recomienda empezar las variables con una letra en minúscula y, si el nombre se compone de varias palabras, capitalizar cada palabra después de la primera. Por ejemplo `videoTranscoder` o `firstName`.
 
-Los nombres de las variables diferencian mayúsculas y minúsculas (p.e. `firstname` es diferente a `firstName`).
+Los nombres de las variables diferencian mayúsculas y minúsculas \(p.e. `firstname` es diferente a `firstName`\).
 
 ## La utilidad de las variables
 
 Crea un archivo llamado `square.js` y escribe el siguiente código:
 
-```js
+```javascript
 console.log("El perímetro de un cuadrado de lado 5 es " + (5 * 4));
 console.log("El área de un cuadrado de lado 5 es " + (5 * 5));
 ```
 
 Al ejecutarlo debería aparecer lo siguiente:
 
-```
+```text
 $ node square.js
 El perímetro de un cuadrado de lado 5 es 20
 El área de un cuadrado de lado 5 es 25
@@ -42,27 +42,27 @@ El área de un cuadrado de lado 5 es 25
 
 El problema con este código es que si quisiéramos calcular el perímetro y el área de un cuadrado de lado 10, o 20, tendríamos que modificar ese valor en varias partes del código. Podemos mejorarlo utilizando una variable:
 
-```js
+```javascript
 var side = 5;
 
 console.log("El perímetro de un cuadrado de lado " + side + " es " + (side * 4));
 console.log("El área de un cuadrado de lado " + side + " es " + (side * side));
 ```
 
-Si ejecutas el código te debería dar el mismo resultado. La ventaja es que si quieres calcular el perímetro y el área de un cuadrado con otro tamaño solo debes cambiar el valor de la variable. Intenta con 18 (te debería dar 72 de perímetro y 324 de área) y después con 39.
+Si ejecutas el código te debería dar el mismo resultado. La ventaja es que si quieres calcular el perímetro y el área de un cuadrado con otro tamaño solo debes cambiar el valor de la variable. Intenta con 18 \(te debería dar 72 de perímetro y 324 de área\) y después con 39.
 
 ## Reasignando el valor de las variables
 
 Puedes reasignar el valor de una variable las veces que lo desees. La forma de hacerlo es similar a la forma en que se declara la una variable con un valor inicial, pero omitiendo la palabra `var`. Por ejemplo:
 
-```js
+```javascript
 // asumiendo que name fue ya declarada
 name = "Nuevo valor";
 ```
 
 Inténtalo. Abre la consola de Node.js e ingresa lo siguiente:
 
-```
+```text
 $ node
 > var name = "Pedro" // declaramos name y le asignamos el valor "Pedro"
 undefined
@@ -78,7 +78,7 @@ Fíjate que, como en este ejemplo, el nuevo valor que se le asigne a la variable
 
 También es posible reasignar el valor de una variable utilizando su valor anterior. Por ejemplo, intenta lo siguiente:
 
-```
+```text
 $ node
 > var count = 1      // declaramos la variable con un valor inicial
 undefined
@@ -92,7 +92,7 @@ undefined
 
 De hecho, incrementar el valor de una variable es tan común que existe un atajo para eso. Asumiendo que sigues en la consola de Node.js intenta lo siguiente:
 
-```
+```text
 > count++
 3
 > count++
@@ -107,7 +107,7 @@ Una variable declarada sin un valor va a tener el valor de `undefined`.
 
 Abre la consola de Node.js intenta lo siguiente:
 
-```
+```text
 $ node
 > var name
 undefined
@@ -127,25 +127,23 @@ La **memoria RAM** es una memoría de rápido acceso que está disponible mientr
 
 1. El siguiente código no está imprimiendo el texto esperado, que debería ser `"Hola Germán"`. ¿Cuál es el problema y cómo lo podrías solucionar?
 
-   ```js
+   ```javascript
    var name = "Germán";
    console.log("Hola name");
-	 ```
+   ```
 
 2. ¿Cuál es la utilidad de las variables?
-
-3. ¿Cuál es la diferencia entre doble igual (`==`) y triple igual (`===`)? ¿Cuál se recomienda usar?
-
+3. ¿Cuál es la diferencia entre doble igual \(`==`\) y triple igual \(`===`\)? ¿Cuál se recomienda usar?
 4. ¿Cuál es el problema con el siguiente código?
 
-   ```js
+   ```javascript
    var 5park = "Parque 5";
-	 ```
+   ```
 
 5. ¿Dónde y cuánto vive una variable?
-
 6. ¿Con qué valor queda una variable declarada de la siguiente forma?
 
-   ```js
+   ```javascript
    var name;
    ```
+

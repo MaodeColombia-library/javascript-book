@@ -25,7 +25,7 @@ Para obtener el nombre de la persona en el objeto que definimos previamente lo h
 console.log(persona.nombre);
 ```
 
-Para obtener el valor de una llave en un objeto utilizamos la notación punto (`.`): el nombre de la variable, seguido de punto, seguido del nombre de la llave:
+Para obtener el valor de una llave en un objeto utilizamos la notación punto \(`.`\): el nombre de la variable, seguido de punto, seguido del nombre de la llave:
 
 ```javascript
 console.log(persona.nombre); // imprime Germán
@@ -34,7 +34,7 @@ console.log(persona.edad); // imprime 35
 console.log(persona.estatura); // imprime 1.8
 ```
 
-Existe otra forma equivalente de obtener el valor de una llave utilizando corchetes cuadrados (`[]`):
+Existe otra forma equivalente de obtener el valor de una llave utilizando corchetes cuadrados \(`[]`\):
 
 ```javascript
 persona["nombre"]
@@ -113,7 +113,7 @@ var products = [
 ];
 ```
 
-En este ejemplo hemos creado un arreglo de objetos. Cada objeto representa un producto y una de sus llaves (`categories`) contiene a su vez un arreglo. Modifiquemos el programa para imprimir los productos en la consola:
+En este ejemplo hemos creado un arreglo de objetos. Cada objeto representa un producto y una de sus llaves \(`categories`\) contiene a su vez un arreglo. Modifiquemos el programa para imprimir los productos en la consola:
 
 ```javascript
 var products = [
@@ -131,25 +131,24 @@ for (var i=0; i < products.length; i++) {
 }
 ```
 
-Lo primero que estamos haciendo es iterando por el arreglo de productos. Por cada uno de los productos (recuerda que cada producto es un objeto) vamos a mostrar el nombre (la llave `nombre`), después el identificador (la llave `id`), el precio (la llave `price`) y las categorías (la llave `categories`). Como las categorías están en un arreglo debemos utilizar el método `join` para convertirlas en una cadena.
+Lo primero que estamos haciendo es iterando por el arreglo de productos. Por cada uno de los productos \(recuerda que cada producto es un objeto\) vamos a mostrar el nombre \(la llave `nombre`\), después el identificador \(la llave `id`\), el precio \(la llave `price`\) y las categorías \(la llave `categories`\). Como las categorías están en un arreglo debemos utilizar el método `join` para convertirlas en una cadena.
 
 ## Evalúate
 
 1. Define un objeto a partir de las propiedades que se muestran en la siguiente tabla y almacénalo en una variable `car`:
 
-        | Llave    | Valor     |
-        | brand   | "Renault" |
-        | year    | 2008      |
-        | price   | 12000     |
-        | color   | :negro    |
-        | sunroof | true      |
+   ```text
+    | Llave    | Valor     |
+    | brand   | "Renault" |
+    | year    | 2008      |
+    | price   | 12000     |
+    | color   | :negro    |
+    | sunroof | true      |
+   ```
 
 2. ¿Cómo podríamos obtener el valor de la llave `color`?
-
 3. ¿Cómo podemos insertar la llave `plates` con el valor `"ABC123"`?
-
 4. ¿Cómo podemos modificar el valor de la llave `year` por `2007`?
-
 5. ¿Cómo podemos eliminar la llave `sunroof`?
-
 6. Escribe un programa que imprima todas las llaves del hash almacenado en `car` con su respectivo valor.
+
