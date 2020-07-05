@@ -13,27 +13,27 @@ Una cadena de texto es un conjunto de caracteres encerrados entre comillas simpl
 
 Si eventualmente lo que se requiere es mostrar las comillas dentro del texto, se puede usar comillas simples para el texto total y commillas dobles para el texto que se quiere entre commillas o viseversa.
 
-    ```javascript
-    'Y él dijo: "Hola Mundo"'
-    ```
+```javascript
+'Y él dijo: "Hola Mundo"'
+```
 
-    ```javascript
-    "Y él dijo: 'Hola Mundo'"
-    ```
+```javascript
+"Y él dijo: 'Hola Mundo'"
+```
 
-  _Lo importante es que el texto no contenga la comillas diferentes que se utilizó para definir la cadena._
+_Lo importante es que el texto no contenga la comillas diferentes que se utilizó para definir la cadena._
 
- o tambien se puede recurrir al backslash `\` \(Alt + 92\), el cual si está dentro de una una cadena de texto simboliza que es el siguiente caracter tiene un significado especial, como `\n` salto de linea , `\r` retorno de carro , `\t` tab [entre otros](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions), [mas](https://www.gnu.org/software/emacs/manual/html_node/elisp/Basic-Char-Syntax.html).
+o tambien se puede recurrir al backslash `\` \(Alt + 92\), el cual si está dentro de una una cadena de texto simboliza que es el siguiente caracter tiene un significado especial, como `\n` salto de linea , `\r` retorno de carro , `\t` tab entre otros [ver mozilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions), [ver gnu](https://www.gnu.org/software/emacs/manual/html_node/elisp/Basic-Char-Syntax.html).
 
-    ```javascript
-    "Y 'él dijo': \"Hola mundo\""
-    ```
+```javascript
+"Y 'él dijo': \"Hola mundo\""
+```
 
 O
 
-    ```javascript
-    'Y \'él dijo\': "Hola mundo"'
-    ```
+```javascript
+'Y \'él dijo\': "Hola mundo"'
+```
 
 ### Imprimiendo una cadena de texto
 
@@ -77,6 +77,16 @@ Hola Mundo Cómo Estás
 Debes tener cuidado al concatenar cadenas y números.
 
 En este momento la concatenación de cadenas no es muy útil porque hubiesemos podido escribir todo el texto `"Hola Mundo Cómo Estás"` dentro de una sola cadena, pero a medida que veamos otros conceptos se va a volver cada vez más importante.
+
+[`[]`](https://eloquentjavascript.net/01_values.html#p_3NJXrCLWRR)...Strings written with single or double quotes behave very much the same—the only difference is in which type of quote you need to escape inside of them. Backtick-quoted strings, usually called template literals, can do a few more tricks. Apart from being able to span lines, they can also embed other values.
+
+```
+$`half of 100 is ${100 / 2}`
+“half of 100 is 50”
+
+```
+
+When you write something inside ${} in a template literal, its result will be computed, converted to a string, and included at that position. The example produces “half of 100 is 50”.
 
 ## Números
 
